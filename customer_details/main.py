@@ -40,7 +40,7 @@ async def submit_form(name: str=Form(...),phone_number: str=Form(...),email: str
             data=json.dumps(order),
             headers=headers
     )
-    return  {name:'name'}
+    return  HTMLResponse(content=open("./templates/datasubmitted.html", "r").read(), status_code=200)
 
 import uvicorn
 uvicorn.run(app,port=8020)

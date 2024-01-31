@@ -1,0 +1,9 @@
+version: 1
+apps:
+  - appDirPath: ./customer_details/
+    appID: order-processor
+    appPort: 8001
+    command: ["uvicorn", "app:app"]
+  - appID: checkout
+    appDirPath: ./database_side/
+    command: ["python3", "app.py"]

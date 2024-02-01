@@ -1,0 +1,15 @@
+# Set the maximum line length to 79.
+line-length = 79
+
+
+target-version = "py310"
+
+[lint]
+extend-select = [
+  "UP",  # pyupgrade
+  "D",   # pydocstyle
+  "E501"
+]
+
+[lint.pydocstyle]
+convention = "google"

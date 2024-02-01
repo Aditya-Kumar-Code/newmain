@@ -1,2 +1,5 @@
-customer_details/.dapr/logs
-database_side/.dapr/logs
+customer_details/.dapr/
+customer_details/__pycache__
+
+database_side/.dapr/
+database_side/__pycache__
